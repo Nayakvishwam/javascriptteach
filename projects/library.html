@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello ! Welcome to Ranchod and dwarikadhish library</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <h1 class="subtitle">Ranchod dwarikadhish library</h1>
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item mt-1">
+                    Home
+                </a>
+            </div>
+            <form method="get">
+                <div class="field has-addons">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Find a repository">
+                    </div>
+                    <div class="control">
+                        <button class="button is-info">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div id="showerror" style="background-color: white;">
+        <!-- <button class="delete"></button>
+        Primar lorem ipsum dolor sit amet, consectetur
+        adipiscing elit lorem ipsum dolor. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. -->
+    </div>
+    <h1 style="margin-left: 300px; margin-top:40px;" class="title">Rachod dwarikadhish library</h1>
+    <form method="get" id="mainform" style="margin-left: 140px; margin-top:60px;">
+        <div class="field is-horizontal mt-5">
+            <div class="field-label is-normal">
+                <label class="label">Enter Book name</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                        <input class="input" type="text" placeholder="Book Name" style="width: 700px;" id="bookname"
+                            required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal mt-5">
+            <div class="field-label is-normal">
+                <label class="label">Enter Author name</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                        <input class="input" type="text" placeholder="Author Name" style="width: 700px;"
+                            name="authorname" id="authorname" required>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal mt-5">
+            <div class="field-label is-normal">
+                <label class="label">Select type</label>
+            </div>
+            <div class="field-body" style="margin-left: 5px;">
+                <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                        <input type="radio" placeholder="Author Name" value="Fiction" name="type" id="type1" checked>
+                        Fiction <br>
+                        <input type="radio" placeholder="Author Name" value="Computer Programming" name="type"
+                            id="type2">
+                        Computer Programming <br>
+                        <input type="radio" placeholder="Author Name" value="Cooking" name="type" id="type">
+                        Cooking
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="field is-grouped" style="margin-left: 200px;margin-top:60px">
+            <p class="control">
+                <button class="button is-primary" id="submit">
+                    Submit
+                </button>
+            </p>
+        </div>
+    </form>
+    <h1 class="title mt-5" style="margin-left: 310px;">Your books</h1>
+    <hr>
+    <table class="table" style="margin-left: 310px;" id="table">
+
+        <tr class="th">
+
+            <th>Books Name</th>
+
+            <th>Authors Name</th>
+
+            <th>Books type</th>
+
+        </tr>
+    </table>
+    <hr>
+</body>
+<script src="/projects/js/library.js"></script>
+
+</html>

@@ -1,0 +1,10 @@
+// alert("ok osm");
+console.time();
+console.log("Nice");
+console.log(34 + 4);
+console.table({ Name: "harry", maarks: 78 });
+console.log([34,56,78,90]);
+console.error("Bad error");
+console.warn("Oops!somthing wron!");
+alert("oops");
+console.timeEnd();

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: wheat;">Welcome to Sticky notes</a>
+            <form class="d-flex" action="search.html" method="get">
+                <input class="form-control me-2" id="search" type="search" required placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" id="submi">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="container">
+            <div class="container">
+                <marquee>
+                    <h1>Submit your notes</h1>
+                </marquee>
+                <form method="get">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label mt-5">Enter your details</label>
+                        <input type="text" name="title" id="title" class="form-control">
+                        <textarea class="form-control mt-5" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        <button type="submit" class="btn btn-danger mt-4" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <center>
+        <h1>Your notes</h1>
+    </center>
+    <center>
+        <div class="row" id="data">
+        </div>
+    </center>
+</body>
+<script src="js/boostrap.js"></script>
+<script src="js/project1.js"></script>
+
+</html>
